@@ -1,0 +1,23 @@
+header{
+    grid-area: header;
+    background-color: var(--clr-blue-400);
+    display: grid;
+    grid-template-columns : minmax(1rem,5rem) 1fr minmax(1rem,5rem);
+    /* height: 6.25rem; */
+}
+
+header .wrapper{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul[role="menu"]{
+    display : flex;
+    gap : 1rem;
+}
+
+header button {
+    font-weight: var(--fw-500);
+}

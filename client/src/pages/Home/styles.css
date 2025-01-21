@@ -1,0 +1,31 @@
+#hero{
+    display: grid;
+    grid-template-columns: minmax(1rem,5rem) 1fr minmax(1rem,5rem);
+}
+
+#hero .wrapper{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 4rem;
+
+}
+
+#hero .hero-details > *:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+#hero .hero-details .action{
+    display: flex;
+    gap : 1rem;
+    margin-top: 2rem;
+}
+.hero-img{
+
+}
+.hero-img img{
+    object-fit: cover;
+    border-radius: 100px 0 100px 0 ;
+}

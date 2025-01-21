@@ -1,0 +1,14 @@
+.primary-btn{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: .125rem;
+    padding: 8px 12px;
+}
+
+.small-btn{
+    width: max-content;
+}
+
+.large-btn{
+    width: 8rem;
+}
