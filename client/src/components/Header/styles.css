@@ -1,4 +1,5 @@
 header{
+    position: relative;
     grid-area: header;
     background-color: var(--clr-blue-400);
     display: grid;

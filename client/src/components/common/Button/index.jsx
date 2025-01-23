@@ -2,19 +2,21 @@ import './styles.css'
 function Button(
     {
         children,
-        buttonSize="small",
+        size="small",
         backgroundColor,
         color='black',
         borderColor,
-    }
+        href="",
+        onClickFn = ()=>{}
+    } 
 ){
     function onClickHandle(e){
-        console.log(e);
+        onClickFn(e)
     }
   
 function getStyleClasses(style) {
     let classString = [];
-    let buttonSizes = {
+    let sizes = {
         large: 'large-btn',
         small: 'small-btn',
     };
@@ -41,8 +43,8 @@ function getStyleClasses(style) {
         classString.push(borderColors[style.borderColor]);
     }
 
-    if (style.buttonSize && buttonSizes[style.buttonSize]) {
-        classString.push(buttonSizes[style.buttonSize]);
+    if (style.size && sizes[style.size]) {
+        classString.push(sizes[style.size]);
     }
     if (style.color && colors[style.color]) {
         classString.push(colors[style.color]);
@@ -54,11 +56,15 @@ function getStyleClasses(style) {
     return classString.join(' ');
 }
 
-const styleClasses = getStyleClasses({ buttonSize, color, backgroundColor,borderColor });
+const styleClasses = getStyleClasses({ size, color, backgroundColor,borderColor });
     return (
-        <button className={`primary-btn ${styleClasses}`} onClick={onClickHandle}>
+        <>
+        {href ? (<a href={href}  className={`primary-btn ${styleClasses}`} onClick={onClickHandle}>
             {children}
-        </button>
+        </a>) : (<button className={`primary-btn ${styleClasses}`} onClick={onClickHandle}>
+            {children}
+        </button>)}
+        </>
     )
 }
 

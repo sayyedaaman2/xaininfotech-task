@@ -1,0 +1,39 @@
+#sign-up{
+    display: grid;
+    grid-template-columns: minmax(1rem,5rem) 1fr minmax(1rem,5rem);
+    color : var(--clr-neutral-100);
+
+}
+
+#sign-up .wrapper{
+    background-color: var(--clr-blue-400);
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-block : 4rem;
+    border-radius: 25px;
+    overflow: hidden;
+
+    
+}
+
+
+
+#sign-up .img-container img{
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 9/16;
+}
+.form-container{
+    display: grid;
+    grid-auto-rows: 110px auto;
+    margin: 4rem;
+}
+.form-heading{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}

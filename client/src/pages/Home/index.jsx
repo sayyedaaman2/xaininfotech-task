@@ -19,8 +19,8 @@ function Home() {
                         Let's travel together, have a better tomorrow.
                     </p>
                     <div className='action'>
-                        <Button buttonSize='large' color='white' backgroundColor={'blue'} borderColor={'blue'}>Online Course</Button>
-                        <Button buttonSize='large'>Videos</Button>
+                        <Button size='large' color='white' backgroundColor={'blue'} borderColor={'blue'}>Online Course</Button>
+                        <Button size='large'>Videos</Button>
 
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import './styles.css'
 import Logo from '../common/Logo'
-import SocialIcon from '../common/SocialIcon';
+import Icon from '../common/Icon';
 function Footer() {
     return (
         <footer>
@@ -18,26 +18,19 @@ function Footer() {
                             <li>Terms & Conditions</li>
                             <li>Contact Support</li>
                         </ul>
-                    </div>
-                    <div >
-                        
-                        <ul>
-                         
-                            <li>Terms & Conditions</li>
-                            <li>Contact Support</li>
-
-                        </ul>
                         <div className="social-media">
+                            <a href="www.facebook.com" target='_blank'><Icon type={'facebook'} /></a>
+                            <a href="www.instagram.com" target='_blank'><Icon type={'instagram'} /></a>
+                            <a href="www.skype.com" target='_blank'><Icon type={'skype'} /></a>
+                            <a href="www.linkedin.com" target='_blank'><Icon type={'linkedin'} /></a>
 
-                        <SocialIcon type={'facebook'} url='www.facebook.com'/>
-                        <SocialIcon type={'instagram'} url='www.instagram.com'/>
-                        <SocialIcon type={'linkedin'} url='www.linkedin.com'/>
-                        <SocialIcon type={'skype'} url='www.skype.com'/>
+
 
                         </div>
                     </div>
+
                 </div>
-                    <hr/>
+                <hr />
                 <div className="copyRight">
                     <p>CopyRight &copy; 2025. All Rights reserved.</p>
                 </div>

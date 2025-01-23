@@ -12,7 +12,9 @@
     margin-block: 4rem;
 
 }
-
+#hero .hero-details{
+    padding-right: 4rem;
+}
 #hero .hero-details > *:not(:last-child){
     margin-bottom: 1rem;
 }

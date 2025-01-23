@@ -8,8 +8,8 @@ function Header(){
             <div className="wrapper">
                 <Logo />
             <ul role="menu">
-                <li role="menuitems"><Button  backgroundColor="white" color="blue">Login</Button></li>
-                <li role="menuitems"><Button color="white" borderColor='white'>Sign Up</Button></li>
+                <li role="menuitems"><Button href="/login"  backgroundColor="white" color="blue">Login</Button></li>
+                <li role="menuitems"><Button href="/sign-up" color="white" borderColor='white'>Sign Up</Button></li>
             </ul>
             </div>
         </header>

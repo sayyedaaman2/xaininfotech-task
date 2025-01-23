@@ -1,14 +1,19 @@
 .primary-btn{
+    font-size: inherit;
+    font-family: inherit;
     border-width: 1px;
     border-style: solid;
     border-radius: .125rem;
-    padding: 8px 12px;
+    height: max-content;
 }
 
 .small-btn{
+
     width: max-content;
+    padding : 4px 32px;
 }
 
 .large-btn{
-    width: 8rem;
+    width: clamp(6rem 10rem 12rem);
+    padding: 12px 32px;
 }
