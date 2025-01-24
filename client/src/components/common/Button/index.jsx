@@ -4,7 +4,7 @@ function Button(
         children,
         size="small",
         backgroundColor,
-        color='black',
+        color='inherit',
         borderColor,
         href="",
         onClickFn = ()=>{}

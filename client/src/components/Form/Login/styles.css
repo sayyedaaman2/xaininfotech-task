@@ -1,0 +1,15 @@
+#login-form > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+#login-form .forget-password{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#login-form .form-actions{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
