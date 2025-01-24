@@ -1,6 +1,6 @@
 import './styles.css'
 import Form from "../../components/Form/Login";
-import LoginImg from '../../assets/images/loginimg.jpeg'
+import LoginImg from '../../assets/images/loginimg.png'
 
 function LoginPage(){
     return(

@@ -1,0 +1,46 @@
+#payment-form {
+    display: grid;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+#payment-form>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#payment-form h2 {
+    margin-bottom: 2rem;
+
+}
+
+#payment-form .select-method{
+    display: flex;
+    flex-direction: column;
+    gap : 2rem
+}
+.radio-input{
+    display: flex;
+    place-items: center;
+}
+.select-method input {
+    margin-right: 1rem;
+}
+
+.select-method input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 2px solid var(--clr-neutral-100);
+    background-color: var(--clr-blue-400);
+cursor: pointer;
+  
+}
+
+.select-method input[type="radio"]:checked {
+        background-color: var(--clr-neutral-100);
+        padding: 4px;
+        border: 2px solid var(--clr-neutral-100);
+      }
